@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sumivex Group：Sumvex.Co组织-写什么介绍啊又没人看的-Damn">
+  <meta name="theme-color" content="#000000">
+  <title>Sumivex.Co MainPage</title>
+  <!-- 上面的是html的网页信息，不包含实际网页内容,下面的知道下一个注释都是网页的图标的资源和抓取 xuan的代码真的狗屎完了html css和js 注释，几个都不一样 -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+  <noscript><style>.menu-toggle{display:none!important}.desktop-nav{display:flex!important;flex-wrap:wrap}.header-inner{height:auto;min-height:88px;flex-wrap:wrap;padding-block:16px}</style></noscript>
+  <!-- 下面即为网页的内容包括ui，脑子抽的可以打开index.html从这个注释配合网页从上往下看,蠢猪xuan不写注释🐖完了 -->
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Sumivex 首页"><img src="assets/logo.png" width="220" height="74" alt="Sumivex"><span class="brand-wordmark" aria-hidden="true">Sumivex</span></a>
+    <!-- 上一行是商标；brand-wordmark 是 Logo 旁的 Sumivex 品牌字样。 -->
+    <nav class="desktop-nav" aria-label="主导航"><a href="#team">项目贡献者</a><a href="join.html">提问我们</a><a class="nav-button" href="#studios">姊妹制作组</a></nav>
+    <!-- 原本的命名AI味太浓，已修改 -->
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div></header>
+  <!-- 第一行黑色带商标和各种选项的主向导页，需要很多修改不符合要求，蠢猪你们不会真的是拿ai写的？？？注释都不写你那脑子能做到不混吗，还需要我来给你们查缺补漏？我在这里骂你们十万年你们都看不见的话是不是就是说明你们压根就不看我代码直接ai套的？？ -->
+  <main id="main">
+    <section class="hero hero-gallery" id="home" aria-labelledby="hero-title">
+      <!-- hero-slides：主页首屏背景图。JavaScript 会随机且不重复地播放 5 张图，每张停留 5 秒并渐变切换。 -->
+      <div class="hero-slides" aria-hidden="true">
+        <img class="hero-slide is-active" src="assets/mainpage (1).jpg" width="1080" height="552" alt="" fetchpriority="high">
+        <img class="hero-slide" src="assets/mainpage (2).jpg" width="1080" height="782" alt="">
+        <img class="hero-slide" src="assets/mainpage (3).jpg" width="1920" height="1080" alt="">
+        <img class="hero-slide" src="assets/mainpage (4).jpg" width="1192" height="977" alt="">
+        <img class="hero-slide" src="assets/mainpage (5).jpg" width="2275" height="1279" alt="">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-copy hero-copy-overlay stack">
+        <!-- 欢迎语：首屏左下角的主标题。 -->
+        <h1 id="hero-title">欢迎来到 Sumivex的网页！</h1>
+        <!-- 解释语：首屏左下角、欢迎语下方的简介。 -->
+        <p class="hero-intro">游玩我们的游戏，服务器！<br>悄悄告诉你，我们很多项目都是为爱发电喔</p>
+        <div class="hero-actions">
+          <a class="button hero-cta" href="#studios">制作组及作品集</a>
+          <button class="button button-soft" id="music-toggle" type="button" aria-pressed="false" aria-describedby="music-status">♫ 开启音乐</button>
+        </div>
+        <p class="music-status" id="music-status" role="status" aria-live="polite" hidden></p>
+          <audio id="site-music" loop preload="auto"></audio>
+      </div>
+    </section>
+    <section class="studios mint" id="studios" aria-labelledby="studios-title"><div class="container studios-content studios-merged">
+      <p class="eyebrow">Studios / 工作室和制作组</p>
+      <h2 id="studios-title">姊妹制作组</h2>
+      <div class="studio-cards">
+        <article class="studio-card stack" aria-labelledby="agm-name">
+          <img class="studio-logo" src="assets/AGMlogo.jpg" width="640" height="640" alt="AGM 工作室标志" loading="lazy">
+          <h3 id="agm-name">AGM工作室</h3>
+          <p class="muted">专注游戏服务器运营。从 GMOD 到 Minecraft，为爱发电，不求收益。</p>
+          <a class="button" href="join.html#play">访问 AGM 工作室</a>
+        </article>
+        <article class="studio-card stack" aria-labelledby="soft-name">
+          <!-- 未来图片位置：拿到 Sumirona 的图片后，删除下面的 div，新增 img 元素并设为 class="studio-logo"；将图片路径填为 assets/文件名.png，宽高填写 640，替代文字写「Sumirona Soft 标志」。 -->
+         <img class="studio-logo" src="assets/Sumirona.png" width="640" height="640" alt="若雫社" loading="lazy">
+          <h3 id="soft-name">Sumirona Soft</h3>
+          <p class="muted">Sumivex.Co 下属视觉小说／GalGame 开发组。若雫社。</p>
+          <a class="button" href="https://sumironasoft.com" target="_blank" rel="noopener noreferrer">访问 Sumirona Soft</a>
+        </article>
+      </div>
+    </div></section>
+    <section class="team container" id="team" aria-labelledby="team-title">
+      <div class="team-compact">
+        <div class="team-summary"><p class="eyebrow">CONTRIBUTORS</p><h2 id="team-title">贡献人员</h2></div>
+        <div class="team-cards">
+          <article class="member-card"><img class="avatar" src="assets/sumij.png" width="96" height="96" alt="Sum1J 的头像" loading="lazy"><div><h3>Sum1J</h3><p class="member-role">站长</p></div></article>
+          <article class="member-card"><img class="avatar" src="assets/xuan.png" width="96" height="96" alt="Xuan 的头像" loading="lazy"><div><h3>Xuan</h3><p class="member-role">副站长</p></div></article>
+        </div>
+      </div>
+      <div class="team-spacer" aria-hidden="true"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p class="footer-slogan">web and server&nbsp; / &nbsp;power by Sumivex</p><p>© 2026 Sumivex.Co All rights reserved.</p></div></footer>
+  <dialog class="mobile-menu" id="mobile-menu" aria-label="手机导航菜单">
+    <div class="menu-header"><a class="brand" href="index.html" aria-label="Sumivex 首页"><img src="assets/logo.png" width="168" height="56" alt="Sumivex"><span class="brand-wordmark" aria-hidden="true">Sumivex</span></a><button class="menu-close" type="button" aria-label="关闭菜单" autofocus>×</button></div>
+    <nav class="menu-links" aria-label="手机导航"><a href="#team">关于我们 ↗</a><a href="join.html">提问我们 ↗</a><a href="#studios">探索旗下工作室 ↗</a></nav>
+    <footer class="menu-footer"><p>SUMIVEX GROUP</p><p>© 2026 Sumivex Group. / 创意连接可能</p></footer>
+  </dialog>
+</body>
+</html>
