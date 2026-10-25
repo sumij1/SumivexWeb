@@ -47,4 +47,3 @@ node --check assets/site.js
 
 上传到静态托管时，只需上传 `index.html`、`join.html`、`favicon.svg` 和完整的 `assets/`，无需运行 Node.js。本次仅交付本地源码和 ZIP，没有发布网站或更改域名／电邮配置。
 
-设计来源：`https://www.figma.com/design/ofzzRgcOH0eJzF8FVElQph/Untitled?node-id=71-20`。首页 `73:45` / `73:56`，加入页 `92:20` / `92:47`，菜单 `92:74`。数据以 2026-10-24 核对的设计为准。
