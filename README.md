@@ -1,4 +1,4 @@
-#SumivexJavaScript Web
+# SumivexJavaScript Web
 
 包含首页、游玩服务器／加入我们页、桌面和手机适配、手机菜单。纯 HTML、CSS 和原生 JavaScript，无框架依赖、无需安装或构建。V1 保存在原来的 `sumivex-web/`，本包独立使用。
 
